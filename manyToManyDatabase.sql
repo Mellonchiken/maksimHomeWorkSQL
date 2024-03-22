@@ -1,8 +1,8 @@
-create database planes;
+create database planes; -- an airport
 
 use planes;
 
-create table departingPeople
+create table departingPeople -- passenger
 (
 departingPeopleId int auto_increment not null,
 name varchar(100) not null,
@@ -13,8 +13,8 @@ primary key(departingPeopleId)
 create table timetable
 (
 timetableId int auto_increment not null,
-planeName varchar(20) not null,
-departureTime date not null,
+planeName varchar(20) not null, -- number of flight
+departureTime date not null, -- maby will be better use 'dataTime'
 primary key(timetableId)
 );
 
